@@ -17,7 +17,7 @@
 <body>
     <header>
         <!-- Nav Bar -------------  -->
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar bg-light fixed-top navbar-expand-lg navbar-light">
             <div class="container">
                 <a class="navbar-brand fw-bold" href="#">
                     <img class="me-3" src="images/logo.png" alt="" width="115"></a>
@@ -36,13 +36,13 @@
                             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="product.html">Product</a>
+                            <a class="nav-link " aria-current="page" href="#shoe">Shoes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="about_us.html">About us</a>
+                            <a class="nav-link " aria-current="page" href="#alle">All items</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="contact_us.html">Contact Us</a>
+                            <a class="nav-link " aria-current="page" href="#bag">Bags</a>
                         </li>
 
 
@@ -51,7 +51,7 @@
             </div>
         </nav>
         <!-- image slider ---------  -->
-        <section class="container">
+        <section class="container my-5">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
@@ -63,8 +63,8 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <div class="row d-flex align-items-center bg-danger p-5">
-                            <div class="col-lg-7 bg-info">
+                        <div class="row d-flex align-items-center  bg-dark text-white p-5">
+                            <div class="col-lg-7 ">
                                 <h1>Cool Dude Headphone</h1>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ratione omnis hic
                                     quia dolorum? Doloremque!
@@ -81,8 +81,8 @@
 
                     </div>
                     <div class="carousel-item">
-                        <div class="row d-flex align-items-center bg-danger p-5">
-                            <div class="col-lg-7 bg-info">
+                        <div class="row d-flex align-items-center  bg-dark text-white p-5">
+                            <div class="col-lg-7 ">
                                 <h1>Cool Dude xbox</h1>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ratione omnis hic
                                     quia dolorum? Doloremque!
@@ -96,8 +96,8 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <div class="row d-flex align-items-center bg-danger p-5">
-                            <div class="col-lg-7 bg-info">
+                        <div class="row d-flex align-items-center bg-dark text-white p-5">
+                            <div class="col-lg-7 ">
                                 <h1>Cool Dude TV</h1>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ratione omnis hic
                                     quia dolorum? Doloremque!
@@ -111,23 +111,15 @@
                         </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+
             </div>
 
         </section>
     </header>
 
     <main>
-        <section class="container my-5">
+        <!-- Item card -----------  -->
+        <section class="container my-5" id="alle">
             <div class="row g-4">
                 <div class="col-lg-4 col-md-6">
                     <div class="p-3 border bg-warning d-flex align-items-center justify-content-between rounded-3">
@@ -149,7 +141,9 @@
                 </div>
             </div>
         </section>
-        <section class="container">
+
+        <!-- Shoes ---------  -->
+        <section class="container" id="shoe">
             <h2>Shoes</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <div class="col">
@@ -194,7 +188,9 @@
                 </div>
             </div>
         </section>
-        <section class="container m-5">
+
+        <!-- Bags --------------  -->
+        <section class="container my-5" id="bag">
             <h2>Bags</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <div class="col">
@@ -240,11 +236,29 @@
             </div>
         </section>
 
+        <section class="container d-flex justify-content-center mb-5 py-5 bg-light">
+            <div>
+                <h1>Stay in touch</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, ipsum?</p>
+                <form>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="your_email@email.com">
+                    </div>
+
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Keep me updated</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </section>
 
     </main>
 
-    <footer>
-
+    <footer class="bg-dark text-white-50 py-2">
+        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit © 2022</p>
     </footer>
 
     <!-- BOOTSTRAS JS----------  -->
